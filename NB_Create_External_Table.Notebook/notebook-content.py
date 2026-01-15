@@ -67,3 +67,8 @@ df.write.format("delta").saveAsTable("external_products", path="abfss://bd135b62
 # META   "language": "sparksql",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# MARKDOWN ********************
+
+# **Hello all!
+# Am Glad you are taking this training!**
