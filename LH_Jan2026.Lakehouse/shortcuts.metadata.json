@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Azure Files_PointedTo",
+    "path": "/Files/ADLG2_Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "b1f8f082-53a1-4f8d-9754-7f67b0ff9585",
+        "location": "https://demosafabriczuzu1.dfs.core.windows.net",
+        "subpath": "/files"
+      }
+    }
+  }
+]

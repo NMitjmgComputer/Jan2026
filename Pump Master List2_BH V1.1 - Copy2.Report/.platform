@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Pump Master List2_BH V1.1 - Copy2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ef1b1986-7000-a59f-46a0-025c2e684b53"
+  }
+}

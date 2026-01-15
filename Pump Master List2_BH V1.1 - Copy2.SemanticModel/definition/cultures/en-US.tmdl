@@ -1,0 +1,2056 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "my_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "my date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MyDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "my moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "my period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "my_date.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "my_date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "my_date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "my_date.month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "ConceptualProperty": "Month Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "my_date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "ConceptualProperty": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "my_date.year_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "Hierarchy": "Year Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "yr hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "year ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "year grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "year order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "year pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "my_date.year_hierarchy.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "Hierarchy": "Year Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "my_date.year_hierarchy.month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "Hierarchy": "Year Hierarchy",
+			          "HierarchyLevel": "Month Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "my_date.year_hierarchy.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "MyDate",
+			          "Hierarchy": "Year Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "monthly_runtime_report": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monthly runtime report": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "report": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "runtime report": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "monthly runtime information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "monthly runtime commentary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "monthly runtime description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "monthly runtime presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "monthly runtime statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "runtime information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "runtime commentary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "runtime description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "runtime presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "runtime statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "DATE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Month and Day": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "monthly_runtime_report.lift_station": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "LIFT STATION "
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lift station": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "station": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "lift location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "lift situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "lift status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lift position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lift place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lift post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lift posting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.pump": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "PUMP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pump": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.address": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "ADDRESS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "address": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "residence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "contact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.min_ontime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "MIN ONTIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min ontime": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "minimum ontime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.max_ontime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "MAX ONTIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max ontime": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "maximum ontime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.total_ontime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "TOTAL ONTIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total ontime": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate ontime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall ontime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.avg_ontime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "AVG ONTIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg ontime": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average ontime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.times_on": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "TIMES ON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "times on": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time on": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "eras on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "epoch on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "period on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "interval on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "while on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "spell on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "stretch on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "stint on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "phase on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "stage on": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.avg_ontime__ts": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "AVG ONTIME - TS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg ontime - ts": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "avg ontime ts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average ontime - ts": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "average ontime ts": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.AVG_ONTIME_second": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "AVG ONTIME_seconds"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "AVG ONTIME_second": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average ontime_second": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.duration_hhmmss": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "Duration (hh:mm:ss)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duration (hh:mm:ss)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.avg_OnTime_Formatted": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "Avg OnTime_Formatted"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg OnTime_Formatted": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average ontime_formatted": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report.count_of_AVG_ONTIME_rolling_average": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Monthly runtime report",
+			          "ConceptualProperty": "Count of AVG ONTIME rolling average"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "count of AVG ONTIME rolling average": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "monthly_runtime_report_in_address": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.address": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.address"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "monthly_runtime_report.address"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "monthly_runtime_report.address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_are_in_addresses"
+			        }
+			      ]
+			    },
+			    "my_date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.date": {
+			          "Target": {
+			            "Entity": "my_date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_dates"
+			        }
+			      ]
+			    },
+			    "my_date_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.year": {
+			          "Target": {
+			            "Entity": "my_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_years"
+			        }
+			      ]
+			    },
+			    "my_date_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.month": {
+			          "Target": {
+			            "Entity": "my_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_months"
+			        }
+			      ]
+			    },
+			    "my_date_has_month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.month_name": {
+			          "Target": {
+			            "Entity": "my_date.month_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.month_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_month_names"
+			        }
+			      ]
+			    },
+			    "my_date_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.day": {
+			          "Target": {
+			            "Entity": "my_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_days"
+			        }
+			      ]
+			    },
+			    "my_date_has_year_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        },
+			        "my_date.year_hierarchy": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "my_date.year_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_year_hierarchies"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.date": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_dates"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_lift_station": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.lift_station": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.lift_station"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.lift_station"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_lift_stations"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_pump": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.pump": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.pump"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.pump"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_pumps"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_address": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.address": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.address"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_addresses"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_min_ontime": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.min_ontime": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.min_ontime"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.min_ontime"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_min_ontimes"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_max_ontime": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.max_ontime": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.max_ontime"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.max_ontime"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_max_ontimes"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_total_ontime": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.total_ontime": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.total_ontime"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.total_ontime"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_total_ontimes"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_avg_ontime": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.avg_ontime": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.avg_ontime"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.avg_ontime"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_avg_ontimes"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_times_on": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.times_on": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.times_on"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.times_on"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_times_on"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_avg_ontime__ts": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.avg_ontime__ts": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.avg_ontime__ts"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.avg_ontime__ts"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_avg_ontime__tses"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_AVG_ONTIME_second": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.AVG_ONTIME_second": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.AVG_ONTIME_second"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.AVG_ONTIME_second"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_AVG_ONTIME_seconds"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_duration_hhmmss": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.duration_hhmmss": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.duration_hhmmss"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.duration_hhmmss"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_duration_hhmmss"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_avg_OnTime_Formatted": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.avg_OnTime_Formatted": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.avg_OnTime_Formatted"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.avg_OnTime_Formatted"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_avg_OnTime_Formatted"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_count_of_AVG_ONTIME_rolling_average": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "monthly_runtime_report.count_of_AVG_ONTIME_rolling_average": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report.count_of_AVG_ONTIME_rolling_average"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report.count_of_AVG_ONTIME_rolling_average"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_count_of_AVG_ONTIME_rolling_average"
+			        }
+			      ]
+			    },
+			    "monthly_runtime_report_has_my_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Monthly runtime report"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "monthly_runtime_report": {
+			          "Target": {
+			            "Entity": "monthly_runtime_report"
+			          }
+			        },
+			        "my_date": {
+			          "Target": {
+			            "Entity": "my_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "monthly_runtime_report"
+			            },
+			            "Object": {
+			              "Role": "my_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "monthly_runtime_reports_have_my_date"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date"
+			            },
+			            "Object": {
+			              "Role": "monthly_runtime_report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "my_date_have_monthly_runtime_reports"
+			        }
+			      ]
+			    },
+			    "my_date_year_hierarchy_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date.year_hierarchy": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy"
+			          }
+			        },
+			        "my_date.year_hierarchy.year": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date.year_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "my_date.year_hierarchy.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "year_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "my_date_year_hierarchy_has_month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date.year_hierarchy": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy"
+			          }
+			        },
+			        "my_date.year_hierarchy.month_name": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy.month_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date.year_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "my_date.year_hierarchy.month_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "year_hierarchies_have_month_names"
+			        }
+			      ]
+			    },
+			    "my_date_year_hierarchy_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "MyDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "my_date.year_hierarchy": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy"
+			          }
+			        },
+			        "my_date.year_hierarchy.day": {
+			          "Target": {
+			            "Entity": "my_date.year_hierarchy.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "my_date.year_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "my_date.year_hierarchy.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "year_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

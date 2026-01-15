@@ -1,0 +1,4 @@
+relationship f4a21eab-a14e-8757-c451-3dbe7cbde40c
+	fromColumn: 'Monthly runtime report'.DATE
+	toColumn: MyDate.Date
+

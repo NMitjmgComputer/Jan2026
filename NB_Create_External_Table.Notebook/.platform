@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "NB_Create_External_Table",
+    "description": "PySpark to create an External Delta Table"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5f813c19-11ae-9657-44e8-e0645dc7ac4f"
+  }
+}

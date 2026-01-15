@@ -1,0 +1,223 @@
+table 'Monthly runtime report'
+	lineageTag: 9c039e5c-33ff-4391-a6db-5806970bc095
+
+	measure 'Duration (hh:mm:ss)' = ```
+			
+			 VAR TotalSeconds = SUM('Monthly runtime report'[AVG ONTIME - TS])
+			 VAR Hours        = INT( TotalSeconds / 3600) 
+			 VAR Minutes      = INT( MOD(TotalSeconds,3600) / 60)
+			 VAR Seconds      = MOD( TotalSeconds,60)
+			 RETURN
+			   FORMAT( Hours, "00") & ":"
+			   & FORMAT( Minutes, "00") & ":"
+			   & FORMAT( Seconds, "00")
+			```
+		lineageTag: f83ee9e1-5651-47cd-b0b2-5fec03e6583f
+
+	measure 'Avg OnTime_Formatted' = ```
+			
+			// Duration formatting 
+			// * @konstatinos 1/25/2016
+			// * Given a number of seconds, returns a format of "hh:mm:ss"
+			//
+			// We start with a duration in number of seconds
+			VAR Duration = SUM('Monthly runtime report'[AVG ONTIME_seconds])
+			// There are 3,600 seconds in an hour
+			VAR Hours = INT ( Duration / 3600)
+			// There are 60 seconds in a minute
+			VAR Minutes = INT ( MOD( Duration - ( Hours * 3600 ),3600 ) / 60)
+			// Remaining seconds are the remainder of the seconds divided by 60 after subtracting out the hours 
+			VAR Seconds = ROUNDUP(MOD ( MOD( Duration - ( Hours * 3600 ),3600 ), 60 ),0) // We round up here to get a whole number
+			RETURN
+			// We put the hours, minutes and seconds into the proper "place"
+			Hours * 10000 + Minutes * 100 + Seconds
+			```
+		lineageTag: 7ef10428-5c63-4719-858f-b61c8eeb5c53
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Count of AVG ONTIME rolling average' =
+			
+			IF(
+				ISFILTERED('MyDate'[DATE]),
+				ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+				VAR __LAST_DATE = LASTDATE('Monthly runtime report'[DATE])
+				RETURN
+					AVERAGEX(
+						DATESBETWEEN(
+							'Monthly runtime report'[DATE],
+							DATEADD(__LAST_DATE, -1, DAY),
+							DATEADD(__LAST_DATE, 1, DAY)
+						),
+						CALCULATE(DISTINCTCOUNT('Monthly runtime report'[AVG ONTIME]))
+					)
+			)
+		lineageTag: f5f76d41-f3b2-4625-8e75-c2e233274909
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "RollingAverage"
+				}
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2d5dfc59-fb76-4dd3-a2a7-850c7168a6d2
+		summarizeBy: none
+		sourceColumn: DATE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'LIFT STATION '
+		dataType: string
+		lineageTag: afe69962-f89e-4813-aafb-61b9692d8697
+		summarizeBy: none
+		sourceColumn: "LIFT STATION "
+
+		annotation SummarizationSetBy = Automatic
+
+	column PUMP
+		dataType: string
+		lineageTag: 81a0df1b-c187-4e05-85dc-6830acf2a7ba
+		summarizeBy: none
+		sourceColumn: PUMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESS
+		dataType: string
+		lineageTag: 5adc2811-4556-4488-aa90-87d7b1960ad9
+		dataCategory: Longitude
+		summarizeBy: none
+		sourceColumn: ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MIN ONTIME'
+		dataType: double
+		lineageTag: 56f0f6b2-0762-4a73-a50f-74bcaf3f10cc
+		summarizeBy: sum
+		sourceColumn: MIN ONTIME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MAX ONTIME'
+		dataType: double
+		lineageTag: abc6319d-8147-49c6-b96a-70afe9f12eff
+		summarizeBy: sum
+		sourceColumn: MAX ONTIME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'TOTAL ONTIME'
+		dataType: double
+		lineageTag: cf91cbed-b83e-4e2b-b8c6-a7bb979b5da6
+		summarizeBy: sum
+		sourceColumn: TOTAL ONTIME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AVG ONTIME'
+		dataType: double
+		lineageTag: a008caa8-c5de-4f24-bc3a-7dc5ccbb7c80
+		summarizeBy: sum
+		sourceColumn: AVG ONTIME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'TIMES ON'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7de94c60-ad6f-4033-80ba-b43decb7ae62
+		summarizeBy: sum
+		sourceColumn: TIMES ON
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AVG ONTIME - TS'
+		dataType: double
+		lineageTag: c7433927-3aa0-417e-9ffe-7fd1474de86f
+		summarizeBy: sum
+		sourceColumn: AVG ONTIME - TS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'AVG ONTIME_seconds'
+		dataType: double
+		lineageTag: 0e5c03a0-a3de-4814-abf6-4af759d5fe4c
+		summarizeBy: sum
+		sourceColumn: AVG ONTIME_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Monthly runtime report' = m
+		mode: import
+		source = ```
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\JMGis\OneDrive\DAX_PBI Notes_Demos_StudentFiles_DemoDBs\StudentFiles\Destiny Jenkins\Pump Master List.xlsx"), null, true),
+				    #"Monthly runtime report_Sheet" = Source{[Item="Monthly runtime report",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Monthly runtime report_Sheet", [PromoteAllScalars=true]),
+				    #"Filtered Rows" = Table.SelectRows(#"Promoted Headers", each [#"LIFT STATION "] <> null and [#"LIFT STATION "] <> ""),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Filtered Rows",{{"DATE", type date}, {"LIFT STATION ", type text}, {"PUMP", type text}, {"MIN ONTIME", type any}, {"TIMES ON", Int64.Type}}),
+				    #"Extracted Last Characters" = Table.TransformColumns(#"Changed Type", {{"MIN ONTIME", each Text.End(Text.From(_, "en-US"), 8), type text}, {"MAX ONTIME", each Text.End(Text.From(_, "en-US"), 8), type text}, {"TOTAL ONTIME", each Text.End(Text.From(_, "en-US"), 8), type text}, {"AVG ONTIME", each Text.End(Text.From(_, "en-US"), 8), type text}}),
+				    #"Split Column by Delimiter2" = Table.SplitColumn(#"Extracted Last Characters", "TOTAL ONTIME", Splitter.SplitTextByDelimiter(" ", QuoteStyle.Csv), {"TOTAL ONTIME.1", "TOTAL ONTIME.2"}),
+				    #"Split Column by Delimiter3" = Table.SplitColumn(#"Split Column by Delimiter2", "AVG ONTIME", Splitter.SplitTextByDelimiter(" ", QuoteStyle.Csv), {"AVG ONTIME.1", "AVG ONTIME.2"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Split Column by Delimiter3", "MIN ONTIME", Splitter.SplitTextByDelimiter(" ", QuoteStyle.Csv), {"MIN ONTIME.1", "MIN ONTIME.2"}),
+				    #"Split Column by Delimiter1" = Table.SplitColumn(#"Split Column by Delimiter", "MAX ONTIME", Splitter.SplitTextByDelimiter(" ", QuoteStyle.Csv), {"MAX ONTIME.1", "MAX ONTIME.2"}),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Split Column by Delimiter1",{"TOTAL ONTIME.2", "AVG ONTIME.2", "MIN ONTIME.2", "MAX ONTIME.2"}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Removed Columns1",{{"LIFT STATION ", Text.Trim, type text}, {"PUMP", Text.Trim, type text}, {"TOTAL ONTIME.1", Text.Trim, type text}, {"AVG ONTIME.1", Text.Trim, type text}, {"MIN ONTIME.1", Text.Trim, type text}, {"MAX ONTIME.1", Text.Trim, type text}}),
+				    #"Cleaned Text" = Table.TransformColumns(#"Trimmed Text",{{"LIFT STATION ", Text.Clean, type text}, {"PUMP", Text.Clean, type text}, {"TOTAL ONTIME.1", Text.Clean, type text}, {"AVG ONTIME.1", Text.Clean, type text}, {"MIN ONTIME.1", Text.Clean, type text}, {"MAX ONTIME.1", Text.Clean, type text}}),
+				    
+				    // Convert mm:ss text into duration
+				    #"Added Duration Columns" = Table.TransformColumns(#"Removed Columns1", {
+				        {"MIN ONTIME.1", each 
+				            let parts = Text.Split(_, ":")
+				            in #duration(0, 0, Number.FromText(parts{0}), Number.FromText(parts{1})), type duration},
+				        {"MAX ONTIME.1", each 
+				            let parts = Text.Split(_, ":")
+				            in #duration(0, 0, Number.FromText(parts{0}), Number.FromText(parts{1})), type duration},
+				        {"TOTAL ONTIME.1", each 
+				            let parts = Text.Split(_, ":")
+				            in #duration(0, 0, Number.FromText(parts{0}), Number.FromText(parts{1})), type duration},
+				        {"AVG ONTIME.1", each 
+				            let parts = Text.Split(_, ":")
+				            in #duration(0, 0, Number.FromText(parts{0}), Number.FromText(parts{1})), type duration}
+				    }),
+				    #"Renamed Columns" = Table.RenameColumns(#"Added Duration Columns",{{"MIN ONTIME.1", "MIN ONTIME"}, {"MAX ONTIME.1", "MAX ONTIME"}, {"TOTAL ONTIME.1", "TOTAL ONTIME"}, {"AVG ONTIME.1", "AVG ONTIME"}}),
+				    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Renamed Columns", {"DATE"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Removed Errors", "AVG ONTIME", "AVG ONTIME - Copy"),
+				    #"Calculated Total Seconds" = Table.TransformColumns(#"Duplicated Column",{{"AVG ONTIME - Copy", Duration.TotalSeconds, type number}}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Calculated Total Seconds",{"DATE", "LIFT STATION ", "PUMP", "ADDRESS", "MIN ONTIME", "MAX ONTIME", "TOTAL ONTIME", "AVG ONTIME", "AVG ONTIME - Copy", "TIMES ON"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Reordered Columns",{{"AVG ONTIME - Copy", "AVG ONTIME - TS"}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Renamed Columns1", "AVG ONTIME", "AVG ONTIME - Copy"),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Duplicated Column1",{{"AVG ONTIME - Copy", "AVG ONTIME_seconds"}}),
+				    #"Extracted Seconds" = Table.TransformColumns(#"Renamed Columns2",{{"AVG ONTIME_seconds", Duration.Seconds, type number}})
+				in
+				    #"Extracted Seconds"
+				```
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

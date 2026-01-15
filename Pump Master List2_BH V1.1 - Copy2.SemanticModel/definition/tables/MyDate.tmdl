@@ -1,0 +1,69 @@
+table MyDate
+	lineageTag: 9546bcc6-3cf9-44d8-86c0-c90e13fdf822
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 4b9f8995-d843-46c6-bb38-c912004fb23a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('MyDate'[Date])
+		formatString: 0
+		lineageTag: 2b1d4149-7dd9-4714-8a2a-d7206da65b87
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = Month('MyDate'[Date])
+		formatString: 0
+		lineageTag: 4c2c1419-5937-4cfb-b7ad-d7dc88ecb17a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name' = ```
+			
+			FORMAT(
+			    DATE(2025, 'MyDate'[Month], 1), 
+			    "mmmm"
+			)
+			```
+		lineageTag: aaaf1d15-03c1-4a4a-90a8-3ccb279bc1d6
+		summarizeBy: none
+		sortByColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day = DAY('MyDate'[Date])
+		formatString: 0
+		lineageTag: 13a6e3bd-c277-48c8-9de4-2456fbda644f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Year Hierarchy'
+		lineageTag: 8aea792b-683b-483b-83b4-5102a65fe254
+
+		level Year
+			lineageTag: 27338629-b9fb-4b57-b019-72639e228258
+			column: Year
+
+		level 'Month Name'
+			lineageTag: 28113af6-cb22-487c-80e0-798b9dcf9e61
+			column: 'Month Name'
+
+		level Day
+			lineageTag: beb861b0-55e9-4b0a-8316-0fb852d9d3ba
+			column: Day
+
+	partition MyDate = calculated
+		mode: import
+		source = CALENDARAUTO(9)
+
+	annotation PBI_Id = f62bb016b65c42bc8d1a71d8a776cba2
+
