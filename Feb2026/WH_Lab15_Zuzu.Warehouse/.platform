@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "WH_Lab15_Zuzu"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "05dc4e73-7b91-84dd-428d-3c7a5354217b"
+  }
+}

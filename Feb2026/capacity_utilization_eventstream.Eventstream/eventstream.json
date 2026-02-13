@@ -1,0 +1,273 @@
+{
+  "sources": [
+    {
+      "id": "6e72a678-e428-4db5-8eab-ad3de85e89a8",
+      "name": "capacity-utilization",
+      "type": "FabricCapacityOverviewEvents",
+      "properties": {
+        "eventScope": "Capacity",
+        "capacityId": "ecb4ede6-d425-4413-86f3-0c7c198d513c",
+        "includedEventTypes": [
+          "Microsoft.Fabric.Capacity.State",
+          "Microsoft.Fabric.Capacity.Summary"
+        ],
+        "filters": []
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "2ab7ad71-8ae8-481d-9603-da04a9be5998",
+      "name": "Eventhouse",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "59c227ad-e721-8dd5-48ca-6c4a9d25b70f",
+        "databaseName": "EH_Feb2026_Zuzu",
+        "tableName": "Capacity_events",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "capacity_utilization_eventstream-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "capacity_utilization_eventstream-stream",
+          "schema": {
+            "columns": [
+              {
+                "name": "subject",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "specversion",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "source",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "time",
+                "type": "DateTime",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "id",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "type",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "dataschemaversion",
+                "type": "Nvarchar(max)",
+                "fields": null,
+                "items": null
+              },
+              {
+                "name": "data",
+                "type": "Record",
+                "fields": [
+                  {
+                    "name": "tenantId",
+                    "type": "Nvarchar(max)",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacityId",
+                    "type": "Nvarchar(max)",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacityName",
+                    "type": "Nvarchar(max)",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacitySku",
+                    "type": "Nvarchar(max)",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacityRegion",
+                    "type": "Nvarchar(max)",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "windowStartTime",
+                    "type": "DateTime",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "windowEndTime",
+                    "type": "DateTime",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "baseCapacityUnits",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacityUnitMs",
+                    "type": "Float",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "interactiveDelayThresholdPercentage",
+                    "type": "Float",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "interactiveRejectionThresholdPercentage",
+                    "type": "Float",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "backgroundRejectionThresholdPercentage",
+                    "type": "Float",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "overageTotalCapacityUnitMs",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "overageAddCapacityUnitMs",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "overageBurndownCapacityUnitMs",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "utilizationBackground",
+                    "type": "Float",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "utilizationInteractive",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "utilizationBackgroundPreview",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "utilizationInteractivePreview",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "processedOverageCapacityUnitsMs",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  },
+                  {
+                    "name": "capacityUnitUtilizationBreakdown",
+                    "type": "Array",
+                    "fields": null,
+                    "items": {
+                      "name": null,
+                      "type": "Record",
+                      "fields": [
+                        {
+                          "name": "WorkloadKind",
+                          "type": "Nvarchar(max)",
+                          "fields": null,
+                          "items": null
+                        },
+                        {
+                          "name": "Utilization",
+                          "type": "Record",
+                          "fields": [
+                            {
+                              "name": "Background",
+                              "type": "Float",
+                              "fields": null,
+                              "items": null
+                            }
+                          ],
+                          "items": null
+                        }
+                      ],
+                      "items": null
+                    }
+                  },
+                  {
+                    "name": "overageBillingLimitCapacityUnitsMs",
+                    "type": "BigInt",
+                    "fields": null,
+                    "items": null
+                  }
+                ],
+                "items": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "d6022152-f7da-4779-a4e9-cbdffa753b76",
+      "name": "capacity_utilization_eventstream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "capacity-utilization"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}

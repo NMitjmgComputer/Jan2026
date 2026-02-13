@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "id": "850bae9b-7acd-4663-80d5-156cf944368a",
+      "name": "new-source",
+      "type": "FabricWorkspaceItemEvents",
+      "properties": {
+        "eventScope": "Workspace",
+        "workspaceId": "7f6a55a6-c969-4146-9b3c-d32b8544a0eb",
+        "includedEventTypes": [
+          "Microsoft.Fabric.ItemCreateSucceeded",
+          "Microsoft.Fabric.ItemCreateFailed",
+          "Microsoft.Fabric.ItemUpdateSucceeded",
+          "Microsoft.Fabric.ItemUpdateFailed",
+          "Microsoft.Fabric.ItemDeleteSucceeded",
+          "Microsoft.Fabric.ItemDeleteFailed"
+        ],
+        "filters": []
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "0b5d9ffc-1aef-4ce8-9890-5a2b75257730",
+      "name": "Eventhouse",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "59c227ad-e721-8dd5-48ca-6c4a9d25b70f",
+        "databaseName": "EH_Feb2026_Zuzu",
+        "tableName": "Events_WS",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "ES_Fabric_Events-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "ES_Fabric_Events-stream",
+          "schema": {
+            "columns": []
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "b1b5331a-db3b-4805-b6f7-6533d6f8459c",
+      "name": "ES_Fabric_Events-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "new-source"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}

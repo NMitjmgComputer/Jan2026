@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Trip",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/Trip",
+        "itemId": "9b2d0ee8-2af6-42e5-b0e1-0f6ab7ef1be9",
+        "workspaceId": "4d489b72-7bf4-4d94-967c-c9a34ee92969"
+      }
+    }
+  },
+  {
+    "name": "Date",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/Date",
+        "itemId": "9b2d0ee8-2af6-42e5-b0e1-0f6ab7ef1be9",
+        "workspaceId": "4d489b72-7bf4-4d94-967c-c9a34ee92969"
+      }
+    }
+  },
+  {
+    "name": "userdata",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/userdata",
+        "itemId": "20142203-8bc5-48f8-ac0c-543ccf602749",
+        "workspaceId": "bd135b62-ea81-4df6-9212-d5905eb9b811"
+      }
+    }
+  },
+  {
+    "name": "textfiles",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "b1f8f082-53a1-4f8d-9754-7f67b0ff9585",
+        "location": "https://demosafabriczuzu1.dfs.core.windows.net",
+        "subpath": "/files/textfiles"
+      }
+    }
+  },
+  {
+    "name": "pdfs",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "b1f8f082-53a1-4f8d-9754-7f67b0ff9585",
+        "location": "https://demosafabriczuzu1.dfs.core.windows.net",
+        "subpath": "/files/pdfs"
+      }
+    }
+  },
+  {
+    "name": "parquet",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "b1f8f082-53a1-4f8d-9754-7f67b0ff9585",
+        "location": "https://demosafabriczuzu1.dfs.core.windows.net",
+        "subpath": "/files/parquet"
+      }
+    }
+  },
+  {
+    "name": "csvs",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "b1f8f082-53a1-4f8d-9754-7f67b0ff9585",
+        "location": "https://demosafabriczuzu1.dfs.core.windows.net",
+        "subpath": "/files/csvs"
+      }
+    }
+  }
+]
